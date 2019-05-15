@@ -1,0 +1,581 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"melb",
+				"melbourne_file_path"
+			],
+			[
+				"__",
+				"__name__ == '__main__':〔variable〕"
+			],
+			[
+				"DB",
+				"DB_TABLENAME〔variable〕"
+			],
+			[
+				"failUn",
+				"failUnlessEqual〔function〕"
+			],
+			[
+				"DB_",
+				"DB_TABLENAME"
+			],
+			[
+				"K",
+				"KeyType"
+			],
+			[
+				"Attri",
+				"AttributeName"
+			],
+			[
+				"spi",
+				"spice_found"
+			],
+			[
+				"spice_n",
+				"spice_needed"
+			],
+			[
+				"Tab",
+				"TableName"
+			],
+			[
+				"spice_",
+				"spice_loc"
+			],
+			[
+				"SKILL",
+				"SKILL_NAME〔variable〕"
+			],
+			[
+				"spice",
+				"spice"
+			],
+			[
+				"intent",
+				"intent_name"
+			],
+			[
+				"repro",
+				"reprompt_text〔variable〕"
+			],
+			[
+				"should",
+				"should_end_session〔variable〕"
+			],
+			[
+				"SKIL",
+				"SKILL_INVOKE"
+			],
+			[
+				"Sk",
+				"SKILL_NAME"
+			],
+			[
+				"session",
+				"sessionAttributes"
+			],
+			[
+				"spee",
+				"speechletResponse"
+			],
+			[
+				"se",
+				"sessionAttributes"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "img-to-card.py",
+			"settings":
+			{
+				"buffer_size": 452,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/arduino-cli/arduino-cli.sublime-build",
+					""
+				],
+				[
+					"Packages/arduino-cli/arduino-cli.sublime-build",
+					"just build"
+				],
+				[
+					"Packages/arduino-cli/arduino-cli.sublime-build",
+					"build and upload"
+				]
+			],
+			[
+				"Packages/arduino-cli/arduino-cli.sublime-build",
+				"build and upload"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 89.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"ANF: Delete File"
+			],
+			[
+				"ssp",
+				"Set Syntax: Python"
+			],
+			[
+				"sspy",
+				"Set Syntax: Python"
+			],
+			[
+				"py",
+				"Set Syntax: Python"
+			],
+			[
+				"json",
+				"Pretty JSON: JSON 2 XML"
+			],
+			[
+				"ixml",
+				"Indent XML"
+			],
+			[
+				"ix",
+				"Indexing Status"
+			],
+			[
+				"xml",
+				"Set Syntax: XML"
+			],
+			[
+				"intp",
+				"Package Control: Install Package"
+			],
+			[
+				"ssx py",
+				"Set Syntax: Python"
+			],
+			[
+				"set md",
+				"Set Syntax: Markdown GFM"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"markd",
+				"GitHub Flavored Markdown: Preview"
+			],
+			[
+				"synt",
+				"Set Syntax: C++"
+			],
+			[
+				"pi",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"mark",
+				"Set Syntax: Markdown"
+			],
+			[
+				"python",
+				"Set Syntax: Python"
+			],
+			[
+				"prev",
+				"GitHub Flavored Markdown: Preview"
+			],
+			[
+				"previ",
+				"GitHub Flavored Markdown: Preview"
+			],
+			[
+				"ssx mark",
+				"Set Syntax: MultiMarkdown"
+			],
+			[
+				"preview",
+				"GitHub Flavored Markdown: Preview"
+			],
+			[
+				"ssxpy",
+				"Set Syntax: Python"
+			],
+			[
+				"env",
+				"Snippet: #!/usr/bin/env"
+			],
+			[
+				"term",
+				"Terminal: Open in project folder"
+			],
+			[
+				"setp",
+				"Set Syntax: Python"
+			],
+			[
+				"snip",
+				"Snippet: #!/usr/bin/env"
+			],
+			[
+				"pack ins pack",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"pref",
+				"Preferences: Settings - User"
+			]
+		],
+		"width": 428.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/mikec/dev/python/myprograms/img-to-card/README.md",
+		"/Users/mikec/dev/python/snippets/snip-try-except.py",
+		"/Users/mikec/dev/python/snippets/snip-dispatch-table.py",
+		"/Users/mikec/Documents/ugandans/ugandan-dcf-context.md",
+		"/Users/mikec/dev/python/myprograms/compare-lists.py",
+		"/Users/mikec/dev/python/snippets/snip-generator 2 loops.py",
+		"/Users/mikec/dev/python/snippets/list1.txt",
+		"/Users/mikec/dev/python/snippets/list2.txt",
+		"/Users/mikec/dev/python/snippets/snip-class-method.py",
+		"/Users/mikec/dev/python/snippets/snip-list.py",
+		"/Users/mikec/dev/python/snippets/snip-monkey patch.py",
+		"/Users/mikec/dev/python/snippets/snip-iterator2.py",
+		"/Users/mikec/dev/python/snippets/snip-mock.py",
+		"/Users/mikec/dev/python/snippets/snip-if-elif-else.py",
+		"/Users/mikec/dev/python/snippets/snip-list 2d.py",
+		"/Users/mikec/dev/python/snippets/snip-functions.py",
+		"/Users/mikec/dev/python/snippets/snip-strings.py",
+		"/Users/mikec/Documents/budget/taxes/tax prep checklist.md",
+		"/Users/mikec/Documents/budget/spending list.md",
+		"/Users/mikec/dev/python/snippets/test.py",
+		"/Users/mikec/dev/python/snippets/snip-dict.py",
+		"/Users/mikec/dev/python/snippets/snip-duck-typing.py",
+		"/Users/mikec/dev/python/myprograms/example- generator.py",
+		"/Users/mikec/dev/python/myprograms/example- iterator.py",
+		"/Users/mikec/dev/python/myprograms/helloworld.py",
+		"/Users/mikec/dev/python/myprograms/interators.py",
+		"/Users/mikec/dev/python/jupyter test/auto-mpg.wpl.csv",
+		"/Users/mikec/dev/python/jupyter test/auto-mpg.csv",
+		"/Users/mikec/dev/python/myprograms/poiguardians/tests/poi_tests.py",
+		"/Users/mikec/dev/data-science/kaggle-learn-ml/l01-explore.py",
+		"/Volumes/Catwoman/Nellies_v18_DG.ksp",
+		"/Volumes/Catwoman/Nellies_v18_DG.json",
+		"/System/Library/Automator/Pad Images.action/Contents/MacOS/Pad Images",
+		"/Users/mikec/Desktop/three little pigs.txt",
+		"/Users/mikec/Desktop/NPCs/NPCs.md",
+		"/Users/mikec/Desktop/NPCs2/NPCs.html",
+		"/Users/mikec/Documents/budget/credit report/chase credit card removal.txt",
+		"/Users/mikec/dev/data science/meeple-matcher/xmlcache/collection/username=8BITIFISH.xml",
+		"/Users/mikec/dev/data science/meeple-matcher/xmlcache/collection/username=mikec.xml",
+		"/Users/mikec/dev/data science/meeple-matcher/xmlcache/thing/id=4100/id=4100-1.xml",
+		"/Users/mikec/dev/data science/meeple-matcher/xmlcache/thing/id=3895/id=3895-1.xml",
+		"/Users/mikec/dev/data science/meeple-matcher/xmlcache/thing/id=2949/id=2949-1.xml",
+		"/Users/mikec/dev/data science/meeple-matcher/xmlcache/thing/id=311/id=311-1.xml",
+		"/Users/mikec/dev/data science/meeple-matcher/xmlcache/thing/id=284/id=284-1.xml",
+		"/Users/mikec/dev/data science/meeple-matcher/xmlcache/thing/id=147/id=147-1.xml",
+		"/Users/mikec/dev/data science/meeple-matcher/xmlcache/thing/id=40/id=40-1.xml",
+		"/Users/mikec/dev/data science/meeple-matcher/xmlcache/thing-id=28143/thing-id=28143-1.xml",
+		"/Users/mikec/dev/data science/meeple-matcher/xmlcache/thing-id=178900/thing-id=178900-1.xml",
+		"/Users/mikec/dev/data science/meeple-matcher/xmlcache/thing-id=19600/thing-id=19600-1.xml",
+		"/Users/mikec/dev/data science/meeple-matcher/xmlcache/thing-id=13/thing-id=13-1.xml",
+		"/Users/mikec/dev/data science/meeple-matcher/xmlcache/thing-id=48726/thing-id=48726-54.xml",
+		"/Users/mikec/dev/data science/meeple-matcher/xmlcache/thing-id=48726.xml",
+		"/Users/mikec/dev/data science/meeple-matcher/xmlcache/thing-id=154458/thing-id=154458-20.xml",
+		"/Users/mikec/Documents/Halloween/halloween plans.md",
+		"/Users/mikec/dev/data science/meeple-matcher/xmlcache/thing-id=38453/thing-id=38453-1.xml",
+		"/Users/mikec/dev/data science/meeple-matcher/xmlcache/thing-id=5/thing-id=5-1.xml",
+		"/Users/mikec/dev/data science/meeple-matcher/xmlcache/thing-id=1758/thing-id=1758-1.xml",
+		"/Users/mikec/dev/data science/meeple-matcher/xmlcache/collection-username=romance wei.xml",
+		"/Users/mikec/dev/data science/meeple-matcher/xmlcache/collection-username=Arwell.xml",
+		"/Users/mikec/dev/data science/meeple-matcher/things/thing-id=201808/thing-id=201808-1.xml",
+		"/Users/mikec/dev/data science/meeple-matcher/data/thing-id=1770-2.xml",
+		"/Users/mikec/dev/data science/meeple-matcher/data/thing-id=1770-4.xml",
+		"/Users/mikec/dev/data science/meeple-matcher/data/thing-id=48726-55.xml",
+		"/Users/mikec/dev/data science/meeple-matcher/data/thing-id=48726-54.xml",
+		"/Users/mikec/dev/data science/meeple-matcher/data/thing-id=68448-428.xml",
+		"/Users/mikec/dev/data science/meeple-matcher/data/thing-id=38453-54.xml",
+		"/Users/mikec/dev/data science/meeple-matcher/data/thing-id=1758.xml",
+		"/Users/mikec/dev/data science/meeple-matcher/data/thing-id=421-35.xml",
+		"/Users/mikec/dev/data science/meeple-matcher/data/thing-id=421-36.xml",
+		"/Users/mikec/dev/data science/meeple-matcher/data/thing-id=421-2.xml",
+		"/Users/mikec/dev/data science/meeple-matcher/data/thing-id=5.xml",
+		"/Users/mikec/dev/data science/meeple-matcher/data/thing-id=38453.xml",
+		"/Users/mikec/dev/data science/meeple-matcher/data/thing-id=38453-2.xml",
+		"/Users/mikec/dev/data science/meeple-matcher/data/thing-id=18.xml",
+		"/Users/mikec/dev/data science/meeple-matcher/data/collection2brief_mikec.xml",
+		"/Users/mikec/dev/data science/meeple-matcher/data/thing2_38453.xml",
+		"/Users/mikec/dev/data science/meeple-matcher/data/collection_ mikec.xml",
+		"/Users/mikec/dev/python/myprograms/getminifig.py",
+		"/Users/mikec/dev/data science/meeple-matcher/README.md",
+		"/Users/mikec/dev/data science/meeple-matcher/meeple-matcher/README.md",
+		"/Users/mikec/Documents/gaming/My Games/TreasureQuest.md",
+		"/Users/mikec/Documents/gaming/Top 10 Games to Own.mdown",
+		"/Users/mikec/Pictures/yPics/chaturbate/tropicaldreams/chaturbate-sofia/tips/parse_tips.py",
+		"/Users/mikec/dev/Arduino/led_cloud/led_cloud.ino",
+		"/Users/mikec/dev/Arduino/led_cloud/hsl.h",
+		"/Users/mikec/dev/Arduino/led_cloud/hsl.ino",
+		"/Users/mikec/dev/Arduino/led_cloud/transition_pattern.h",
+		"/Users/mikec/dev/Arduino/led_cloud/transition_pattern.ino",
+		"/Users/mikec/Library/Application Support/Sublime Text 3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/Users/mikec/Pictures/yPics/chaturbate/tropicaldreams/ideas.md",
+		"/Users/mikec/Pictures/yPics/chaturbate/tropicaldreams/tips/tips 2017 02-01 to 03-15.tsv",
+		"/Users/mikec/Pictures/yPics/chaturbate/tropicaldreams/profile/profile-sofiakindergirl.htm",
+		"/Users/mikec/Pictures/yPics/chaturbate/tropicaldreams/profile/index.html",
+		"/Users/mikec/dev/Arduino/led_cloud/todo.md",
+		"/Users/mikec/dev/Arduino/led_cloud/test.ino",
+		"/Users/mikec/dev/Arduino/led_cloud/test/unit.c",
+		"/Users/mikec/dev/Arduino/led_cloud/square_pattern.ino",
+		"/Users/mikec/dev/Arduino/led_cloud/square_pattern.h",
+		"/Users/mikec/dev/Arduino/led_cloud/triangle_pattern.ino",
+		"/Users/mikec/dev/Arduino/led_cloud/triangle_pattern.h",
+		"/Users/mikec/dev/Arduino/led_cloud/README.md",
+		"/Users/mikec/dev/Arduino/led_cloud/rainbow_pattern.ino",
+		"/Users/mikec/dev/Arduino/led_cloud/rainbow_pattern.h",
+		"/Users/mikec/Documents/budget/Last Wishes.md",
+		"/Users/mikec/dev/python/myprograms/hslpalette.py",
+		"/Users/mikec/Documents/budget/life insurance/Life Insurance.txt",
+		"/Users/mikec/dev/Arduino/neopixel projects/christmas_tree/README.md",
+		"/Users/mikec/dev/Arduino/neopixel projects/christmas_tree/christmas_tree.ino",
+		"/Users/mikec/dev/garden lights/light patterns.md",
+		"/Users/mikec/dev/Arduino/neopixel projects/christmas_tree/LedWheel.h",
+		"/Users/mikec/dev/Arduino/libraries/FastLED/pixeltypes.h",
+		"/Users/mikec/dev/Arduino/libraries/FastLED/colorutils.h",
+		"/Users/mikec/dev/Arduino/libraries/FastLED/FastLED.h",
+		"/Users/mikec/Library/Application Support/Sublime Text 3/Packages/User/arduino-cli.sublime-settings",
+		"/Users/mikec/dev/Arduino/libraries/FastLED/colorutils.cpp",
+		"/Users/mikec/dev/Arduino/libraries/FastLED/color.h",
+		"/Users/mikec/Documents/consulting/stratogent/website competitors/CRN, 2016 Fast Growth 150.txt",
+		"/Users/mikec/dev/alexa skills/spicerack/tests/spicerack_tests.py",
+		"/Users/mikec/dev/alexa skills/bootcamp sept 10/Alexa skill webinar.mmd",
+		"/Users/mikec/dev/alexa skills/spicerack/speechAssets/sampleUtterances.txt",
+		"/Users/mikec/Google Drive - mcombsVERISTORM/All Veristorm/marketing/Publications/Datanami/2016-07/Datanami_ Big Data, Big Analytics, Big Insights copy.html",
+		"/Users/mikec/Google Drive - mcombsVERISTORM/All Veristorm/marketing/Publications/ESM- Enterprise Executive/2016-07/README.txt",
+		"/Users/mikec/Google Drive - mcombsVERISTORM/All Veristorm/marketing/Publications/Datanami/2016-07/Datanami_ Big Data, Big Analytics, Big Insights.html",
+		"/Users/mikec/dev/alexa skills/spicerack/scratchfiles/test-py3.py",
+		"/Users/mikec/Library/Application Support/Sublime Text 3/Packages/User/Python-2.7.sublime-build",
+		"/Users/mikec/Library/Application Support/Sublime Text 3/Packages/User/Python-3.5.sublime-build",
+		"/Users/mikec/Google Drive - mcombsVERISTORM/All Veristorm/marketing/Publications/ESM/2016-07/Datanami_ Big Data, Big Analytics, Big Insights.html",
+		"/Users/mikec/dev/alexa skills/keyboard shortcut/Punctuation symbols.txt"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "img-to-card.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 452,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								266,
+								266
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 247.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Python/Python.sublime-build",
+	"project": "img-to-card.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"sp",
+				"~/dev/alexa skills/spicerack/spicerack.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
