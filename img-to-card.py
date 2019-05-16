@@ -28,14 +28,19 @@ def getCardList(deck_path):
 def cardify(cards, card_size, shadow):
     """Resize, apply white borders and shadow."""
 
-    card_l1 = Image.open('00 poker card border.png')
-    card_src = Image.open(os.path.join(deck_path, cards[0]))
-    card_src = card_src.resize((151, 225))  # fit inside inner border
+    # stack images:
+    # 3. outer border with shadow
+    # 2. card art
+    # 1. inner border with center hole
+    outer = Image.open('00 poker card shadow.png')
+    art = Image.open(os.path.join(deck_path, cards[0]))
+    art = art.resize((151, 225))  # fit inside inner border
     # place inside on white card bg
-    card_l1.paste(card_src, (12, 10))
+    outer.paste(art, (12, 10))
     # round corners of inside image
-    card_l1.paste(Image.open('00 poker card border.png'), (0,0), Image.open('00 poker card border.png'))
-    card_l1.show()
+    inner = Image.open('00 poker card shadow.png')
+    outer.paste(inner, (0,0), inner)
+    outer.show()
     return
 
 def main():
