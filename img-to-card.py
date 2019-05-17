@@ -2,8 +2,10 @@
 
 import os
 from PIL import Image
+import random
 
-deck_path = '/Users/mikec/Documents/gaming/DriveThruRPG/Just Insert Imagination/Pirate cards, renamed'
+src_path = '/Users/mikec/Documents/gaming/DriveThruRPG/Just Insert Imagination/Pirate cards, renamed'
+dest_path = 'results'
 dpi = 70
 card_size = (2.5 * dpi, 3.5 * dpi)
 # art_size = (2.25 * dpi, 3.25 * dpi)
@@ -13,17 +15,17 @@ art_offset = (12, 10)
 shadow = 4
 
 
-def getCardList(deck_path):
+def getCardList(src_path):
     """Return list of card file names.
 
     Return list of image file names,
     given a folder.
     """
-    files = os.listdir(deck_path)
+    files = os.listdir(src_path)
     jpgs = []
     for f in files:
         try:
-            with Image.open(os.path.join(deck_path, f)) as im:
+            with Image.open(os.path.join(src_path, f)) as im:
                 jpgs.append(f)
         except IOError:
             pass
@@ -38,7 +40,7 @@ def cardify(card_name):
     # 2. card art
     # 1. inner border with center hole
     outer = Image.open('00 poker card shadow.png')
-    art = Image.open(os.path.join(deck_path, card_name))
+    art = Image.open(os.path.join(src_path, card_name))
     art = art.resize(art_size)  # fit inside inner border
     # place inside on white card bg
     outer.paste(art, art_offset)
@@ -51,17 +53,24 @@ def cardify(card_name):
 def tilt(card):
     """Apply -1 to +1 degree rotation to cards"""
 
-    tilted = card.rotate(1)
-    tilted.show()
+    degrees = random.randint(-10, 10) / 10
+    print(degrees)
+    tilted = card.rotate(degrees, expand=1)
     return tilted
 
 
 def main():
-    card_names = getCardList(deck_path)
-    print(card_names)
-
-    card = cardify(card_names[0])
-    card.show()
+    random.seed(None)
+    card_names = getCardList(src_path)
+    
+    for src_card in card_names:
+        print(src_card)
+        card = cardify(src_card)
+        (card_name, ext) = os.path.splitext(src_card)
+        card_name = card_name + '.png'
+        print(f"{src_card} saved as {card_name}")
+        card.save(os.path.join(dest_path, card_name), 'PNG', optimize=True)
+        # card.show()
     # card = tilt(card)
     # card.show()
 
