@@ -3,9 +3,8 @@
 import os
 from PIL import Image
 import random
+import sys
 
-src_path = '/Users/mikec/Documents/gaming/DriveThruRPG/Just Insert Imagination/Pirate cards, renamed'
-dest_path = 'results'
 dpi = 70
 card_size = (2.5 * dpi, 3.5 * dpi)
 # art_size = (2.25 * dpi, 3.25 * dpi)
@@ -32,7 +31,7 @@ def getCardList(src_path):
     return jpgs
 
 
-def cardify(card_name):
+def cardify(src_path, card_name):
     """Resize, apply white borders and shadow."""
 
     # stack images:
@@ -61,18 +60,30 @@ def tilt(card):
 
 def main():
     random.seed(None)
-    card_names = getCardList(src_path)
+    sources = sys.argv[1:]
+    for src_path in sources:
+        dest_path = os.path.split(src_path)[1] + ' with VTT border'
+        print(f'src_path = {src_path}, dest_path = {dest_path}')
+        card_names = getCardList(src_path)
+        try:
+            os.mkdir(dest_path)
+        # except Exception as e:
+        #     raise
+        # else:
+        #     pass
+        finally:
+            pass
     
-    for src_card in card_names:
-        print(src_card)
-        card = cardify(src_card)
-        (card_name, ext) = os.path.splitext(src_card)
-        card_name = card_name + '.png'
-        print(f"{src_card} saved as {card_name}")
-        card.save(os.path.join(dest_path, card_name), 'PNG', optimize=True)
-        # card.show()
-    # card = tilt(card)
-    # card.show()
+        for src_card in card_names:
+            print(src_card)
+            card = cardify(src_path, src_card)
+            (card_name, ext) = os.path.splitext(src_card)
+            card_name = card_name + '.png'
+            print(f"{src_card} saved as {card_name}")
+            card.save(os.path.join(dest_path, card_name), 'PNG', optimize=True)
+            # card.show()
+            # card = tilt(card)
+            # card.show()
 
 
 if __name__ == "__main__":
