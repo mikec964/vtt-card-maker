@@ -92,12 +92,13 @@
 	"buffers":
 	[
 		{
-			"file": "img-to-card.py",
+			"file": "/Users/mikec/Documents/career/Sigil/Deadlands/Pawns/pawn character names.txt",
 			"settings":
 			{
-				"buffer_size": 452,
+				"buffer_size": 1238,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
+				"line_ending": "Unix",
+				"name": "Agent"
 			}
 		}
 	],
@@ -288,8 +289,18 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/Users/mikec/mycode/python/img-to-card"
+	],
 	"file_history":
 	[
+		"/Users/mikec/mycode/python/img-to-card/img-to-card.py",
+		"/Users/mikec/Documents/career/Sigil/Deadlands/Pawns/pawn names.txt",
+		"/Users/mikec/dev/python/myprograms/pdf-images/pdf-images.py",
+		"/Users/mikec/dev/python/myprograms/img-to-card/img-to-card.py",
+		"/Users/mikec/dev/python/myprograms/img-to-card/About These Cards.md",
+		"/Users/mikec/dev/python/myprograms/img-to-card/osxalias/osxalias.py",
 		"/Users/mikec/dev/python/myprograms/img-to-card/README.md",
 		"/Users/mikec/dev/python/snippets/snip-try-except.py",
 		"/Users/mikec/dev/python/snippets/snip-dispatch-table.py",
@@ -411,30 +422,26 @@
 		"/Users/mikec/dev/alexa skills/bootcamp sept 10/Alexa skill webinar.mmd",
 		"/Users/mikec/dev/alexa skills/spicerack/speechAssets/sampleUtterances.txt",
 		"/Users/mikec/Google Drive - mcombsVERISTORM/All Veristorm/marketing/Publications/Datanami/2016-07/Datanami_ Big Data, Big Analytics, Big Insights copy.html",
-		"/Users/mikec/Google Drive - mcombsVERISTORM/All Veristorm/marketing/Publications/ESM- Enterprise Executive/2016-07/README.txt",
-		"/Users/mikec/Google Drive - mcombsVERISTORM/All Veristorm/marketing/Publications/Datanami/2016-07/Datanami_ Big Data, Big Analytics, Big Insights.html",
-		"/Users/mikec/dev/alexa skills/spicerack/scratchfiles/test-py3.py",
-		"/Users/mikec/Library/Application Support/Sublime Text 3/Packages/User/Python-2.7.sublime-build",
-		"/Users/mikec/Library/Application Support/Sublime Text 3/Packages/User/Python-3.5.sublime-build",
-		"/Users/mikec/Google Drive - mcombsVERISTORM/All Veristorm/marketing/Publications/ESM/2016-07/Datanami_ Big Data, Big Analytics, Big Insights.html",
-		"/Users/mikec/dev/alexa skills/keyboard shortcut/Punctuation symbols.txt"
+		"/Users/mikec/Google Drive - mcombsVERISTORM/All Veristorm/marketing/Publications/ESM- Enterprise Executive/2016-07/README.txt"
 	],
 	"find":
 	{
-		"height": 24.0
+		"height": 39.0
 	},
 	"find_in_files":
 	{
 		"height": 101.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
 	{
-		"case_sensitive": true,
+		"case_sensitive": false,
 		"find_history":
 		[
+			" pawn.png"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -442,10 +449,11 @@
 		"regex": true,
 		"replace_history":
 		[
+			""
 		],
 		"reverse": false,
 		"show_context": true,
-		"use_buffer2": true,
+		"use_buffer2": false,
 		"whole_word": false,
 		"wrap": true
 	},
@@ -457,29 +465,29 @@
 			[
 				{
 					"buffer": 0,
-					"file": "img-to-card.py",
+					"file": "/Users/mikec/Documents/career/Sigil/Deadlands/Pawns/pawn character names.txt",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 452,
+						"buffer_size": 1238,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								266,
-								266
+								1147,
+								1147
 							]
 						],
 						"settings":
 						{
-							"auto_complete": false,
-							"git_gutter_is_enabled": true,
-							"syntax": "Packages/Python/Python.sublime-syntax"
+							"auto_name": "Agent",
+							"git_gutter_is_enabled": false,
+							"syntax": "Packages/MarkdownEditing/Markdown.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1366.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -490,7 +498,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 24.0
+		"height": 26.0
 	},
 	"input":
 	{
@@ -531,7 +539,7 @@
 	"project": "img-to-card.sublime-project",
 	"replace":
 	{
-		"height": 44.0
+		"height": 70.0
 	},
 	"save_all_on_build": true,
 	"select_file":

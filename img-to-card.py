@@ -1,89 +1,106 @@
 #!/usr/bin/env python3
 
-import os
+import os, errno
 from PIL import Image
 import random
 import sys
 
-dpi = 70
-card_size = (2.5 * dpi, 3.5 * dpi)
-# art_size = (2.25 * dpi, 3.25 * dpi)
-art_size = (151, 225)
-# art_offset = (0.125 * dpi, 0.125 * dpi)
-art_offset = (12, 10)
-shadow = 4
+class vttCards():
+    """Creates a deck of cards optimized for VTT
 
-
-def getCardList(src_path):
-    """Return list of card file names.
-
-    Return list of image file names,
-    given a folder.
+    Inputs:
+        * folder with card art, jokers, and deck back
     """
-    files = os.listdir(src_path)
-    jpgs = []
-    for f in files:
+
+    def __init__(self, source_path):
+        self.ppi = 72
+        self.card_size = (2.5 * self.ppi, 3.5 * self.ppi)
+        self.art_size = (151, 225)
+        self.art_offset = (int(0.125 * self.ppi), int(0.125 * self.ppi))
+        self.shadow = 4
+        self.card_template = 'resources/poker card shadow.png'
+        self.source_folder = source_path
+        self.output_folder = self.source_folder + ' for Roll20'
         try:
-            with Image.open(os.path.join(src_path, f)) as im:
-                jpgs.append(f)
-        except IOError:
-            pass
-    return jpgs
+            os.mkdir(self.output_folder)
+        except Exception as e:
+            if e.errno != errno.EEXIST:
+                raise
+        return
 
+    def card_list(self):
+        """Return list of card file names."""
 
-def cardify(src_path, card_name):
-    """Resize, apply white borders and shadow."""
+        files = os.listdir(self.source_folder)
+        jpgs = []
+        for f in files:
+            try:
+                with Image.open(os.path.join(self.source_folder, f)) as im:
+                    jpgs.append(f)
+            except IOError:
+                pass
+        return jpgs
 
-    # stack images:
-    # 3. outer border with shadow
-    # 2. card art
-    # 1. inner border with center hole
-    outer = Image.open('00 poker card shadow.png')
-    art = Image.open(os.path.join(src_path, card_name))
-    art = art.resize(art_size)  # fit inside inner border
-    # place inside on white card bg
-    outer.paste(art, art_offset)
-    # round corners of inside image
-    inner = Image.open('00 poker card shadow.png')
-    outer.paste(inner, (0,0), inner)
-    return outer
+    def cardify(self, card_name):
+        """Resize, apply white borders and shadow."""
 
+        # stack images:
+        # bottom layer: outer border with shadow
+        outer = Image.open(self.card_template)
+        # middle layer: card art
+        art = Image.open(os.path.join(self.source_folder, card_name))
+        art = art.resize(self.art_size)  # fit inside inner border
+        outer.paste(art, self.art_offset)
+        # top layer: inner border with center hole
+        inner = Image.open(self.card_template)
+        # round corners of inside image
+        outer.paste(inner, (0,0), inner)
+        return outer
 
-def tilt(card):
-    """Apply -1 to +1 degree rotation to cards"""
+    def tilt(self, card):
+        """Apply -1.0 to +1.0 degree rotation to cards"""
 
-    degrees = random.randint(-10, 10) / 10
-    print(degrees)
-    tilted = card.rotate(degrees, expand=1)
-    return tilted
+        degrees = random.randint(-10, 10) / 10
+        print(degrees)
+        tilted = card.rotate(degrees, expand=1, resample=Image.BICUBIC)
+        return tilted
 
-
-def main():
-    random.seed(None)
-    sources = sys.argv[1:]
-    for src_path in sources:
-        dest_path = os.path.split(src_path)[1] + ' with VTT border'
-        print(f'src_path = {src_path}, dest_path = {dest_path}')
-        card_names = getCardList(src_path)
-        try:
-            os.mkdir(dest_path)
-        # except Exception as e:
-        #     raise
-        # else:
-        #     pass
-        finally:
-            pass
-    
-        for src_card in card_names:
+    def save_cards(self):
+        for src_card in self.card_list():
             print(src_card)
-            card = cardify(src_path, src_card)
+            card = self.cardify(src_card)
+            card = self.tilt(card)
             (card_name, ext) = os.path.splitext(src_card)
             card_name = card_name + '.png'
             print(f"{src_card} saved as {card_name}")
-            card.save(os.path.join(dest_path, card_name), 'PNG', optimize=True)
+            card.save(os.path.join(self.output_folder, card_name), 'PNG', optimize=True)
             # card.show()
-            # card = tilt(card)
-            # card.show()
+        return
+
+    def nameForRoll20(self, card_name):
+        """Rename to meet Roll20 sorting requirements.
+
+        c,d,h,s become ' of Clubs'
+        10 becomes 'Ten'
+        a,j,q,k become Ace, Jack, Queen, King
+        j1,j2 become joker
+
+        reference: https://ambitiouswithcards.com/new-deck-order/
+        New Deck Order is TOP A-KH, A-KC, K-AD, K-AS, J2, J1 FACE
+        red joker (J1) is the larger or more colorful one
+        black joker is monochrome, and of lower rank
+        """
+
+        pass
+
+def main():
+    random.seed(None)
+    source = sys.argv[1]
+    print(f'param1= {source}')
+    my_deck = vttCards(source)
+    print(f'source = {my_deck.source_folder}, dest = {my_deck.output_folder}')
+    print(my_deck.card_list())
+    my_deck.save_cards()
 
 
 if __name__ == "__main__":

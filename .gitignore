@@ -3,4 +3,5 @@
 *.sublime-workspace
 __pycache__/
 *.py[cod]
-
+decks/
+venv/
